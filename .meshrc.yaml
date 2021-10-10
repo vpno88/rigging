@@ -1,0 +1,7 @@
+sources:
+- name: RiggingApi
+  handler:
+    openapi:
+      baseUrl: http://localhost:8000
+      source: ./openapi-schema.json
+      sourceFormat: json

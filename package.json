@@ -1,0 +1,24 @@
+{
+  "name": "riggingjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-mesh/cli": "^0.41.0",
+    "@graphql-mesh/openapi": "^0.18.18",
+    "apollo-server-core": "^3.3.0",
+    "apollo-server-express": "^3.3.0",
+    "axios": "^0.22.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "graphql": "^15.6.1",
+    "http-proxy-middleware": "^2.0.1",
+    "nconf": "^0.11.3",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0",
+  },
+  "scripts": {
+    "buildschema": "node spec/dump.js > openapi-schema.json && yarn mesh build"
+  }
+}
